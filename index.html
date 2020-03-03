@@ -4,13 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEvTools</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
 
     <!-- MENU DE NAVEGAÇÃO -->
 
-    <nav>
-        <p>Minha Página</p>
+    <nav class="menu">
         <li>
             <li><a href="#servicos">Serviços</a></li>
             <li><a href="#clientes">Clientes</a></li>
@@ -23,8 +23,9 @@
     </nav>
 
     <!-- sessão de propaganda -->
-    <h1>O que nós oferecemos ? </h1>
+    
     <header>
+        <h1>O que nós oferecemos ? </h1>
         <p>
             Oferecemos o desenvolvimento dos melhores sites e apps 
             para sua empresa
@@ -39,53 +40,73 @@
         <section id="servicos">
             <h2>Serviços</h2>
             <p>Oferecemos os melhores serviços em desenvolvimento de sites e apps</p>
-            <div>
+            <div class="imgPad">
             <img src="img/pexels-photo-3747455.jpeg" alt="imagem de serviço" width="300px"/>
             </div>
-            <div><img src="img/pexels-photo-3172740.jpeg" alt="imagem de serviço2" width="300px"></div>
+            <div class="imgPad"><img src="img/pexels-photo-3172740.jpeg" alt="imagem de serviço2" width="300px"></div>
         </section>
         <!-- CLIENTES -->
         <section id="clientes">
             <h2>Clientes</h2>
             <p>Nossos clientes ficaram muito satisfeitos com os nossos serviços</p>
-            <div>
+            <div class="imgPad">
                 <img src="img/pexels-photo-3747455.jpeg" alt="imagem de serviço" width="300px"/>
                 </div>
-                <div><img src="img/pexels-photo-3172740.jpeg" alt="imagem de serviço2" width="300px"></div>
+                <div class="imgPad"><img src="img/pexels-photo-3172740.jpeg" alt="imagem de serviço2" width="300px"></div>
         </section>
         <!-- PARCEIROS -->
         <section id="parceiros">
             <h2>Parceiros</h2>
             <p>Nossos parceiros nos ajudam a entregar as melhores soluções para nossos clientes</p>
-            <div>
+            <div class="imgPad">
                 <img src="img/pexels-photo-3747455.jpeg" alt="imagem de serviço" width="300px"/>
                 </div>
-                <div><img src="img/pexels-photo-3172740.jpeg" alt="imagem de serviço2" width="300px"></div>
+                <div class="imgPad"><img src="img/pexels-photo-3172740.jpeg"  alt="imagem de serviço2" width="300px"></div>
         </section>
         <!-- TIMES -->
         <section id="times">
             <h2>Time</h2>
             <p>Nosso time trabalha com o muita qualidade e empenho para entregar mais valor no produto de nossos clientes</p>
-            <div>
-                <img src="img/pexels-photo-3747455.jpeg" alt="imagem de serviço" width="300px"/>
+            <div class="imgPad">
+                <img src="img/pexels-photo-3747455.jpeg"  alt="imagem de serviço" width="300px"/>
                 </div>
-                <div><img src="img/pexels-photo-3172740.jpeg" alt="imagem de serviço2" width="300px"></div>
+                <div class="imgPad"><img src="img/pexels-photo-3172740.jpeg"  alt="imagem de serviço2" width="300px"></div>
         </section>
         <!-- CONTATO -->
         <section id="contato">
             <h2>Contato</h2>
             <p>Oferecemos os melhores serviços em desenvolvimento de sites e apps</p>
-            <div>
-                <img src="img/pexels-photo-3747455.jpeg" alt="imagem de serviço" width="300px"/>
+            <div class="imgPad">
+                <img src="img/pexels-photo-3747455.jpeg"  alt="imagem de serviço" width="300px"/>
                 </div>
-                <div><img src="img/pexels-photo-3172740.jpeg" alt="imagem de serviço2" width="300px"></div>
+                <div class="imgPad"><img src="img/pexels-photo-3172740.jpeg"  alt="imagem de serviço2" width="300px"></div>
         </section>
 
     </main>
 
 
     <footer>
-        <p>Desenvolvido por Gabriel Rodrigues Perez</p>
+        <p>Desenvolvido por &#x2623; Gabriel Rodrigues Perez</p>
     </footer>
+
+    <script type="text/javascript">
+        
+$(function(){   
+	var nav = $('.menu');   
+	$(window).scroll(function () { 
+		if ($(this).scrollTop() > 150) { 
+			nav.addClass("fixed");
+			$('body').css('padding-top', 70);
+		} else { 
+			nav.removeClass("fixed"); 
+			$('body').css('padding-top', 0);
+		} 
+	});  
+})
+        
+    
+    
+    </script>
+
 </body>
 </html>

@@ -1,0 +1,90 @@
+
+
+body{
+    background-color: blue;
+    color: rgba(0, 0, 0, 0.856);
+    margin: 50px auto;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+h1{
+    margin-top: 50px;
+    font-family: fantasy;
+   
+    color:white;
+}
+li a{
+    color:white;
+    outline-offset: none;
+    text-decoration: none;
+    padding: 15px;
+    top: 20px;
+}
+ul, li {
+    list-style-type: none;
+    display: inline;
+    top: 20px;
+
+}
+
+nav{
+    background-color: rgb(167, 176, 194);
+    padding: 15px;
+    margin-top: -50px;
+    
+}
+
+p{
+    font-size: larger;
+}
+header{
+    background-color: rgb(6, 29, 94);
+}
+
+main #servicos{
+    background-color: crimson;
+    padding: 30px;
+}
+main #clientes{
+    background-color: rgb(90, 78, 7);
+    padding: 30px;
+}
+main #parceiros{
+    background-color: rgb(36, 102, 91);
+    padding: 30px;
+}
+main #times{
+    background-color: rgb(41, 0, 65);
+    padding: 30px;
+}
+main #contato{
+    background-color: rgb(255, 115, 0);
+    padding: 30px;
+}
+
+footer{
+    background-color:blue;
+    padding: 15px;
+}
+
+.imgPad{
+    display: inline-block;
+    width: 200px;
+    margin: 10px;
+    position: relative;
+    text-align: center;
+
+}
+
+.fixed{
+    position: fixed;
+    top: 0;
+	z-index: 99;
+	transition: all .5s;
+}
